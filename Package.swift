@@ -59,7 +59,7 @@ package.targets += [
 		"AtomicTransition",
 	]),
 
-	.target(name: "NavigationTransitions", dependencies: [
+	.target(name: "CustomNavigationTransitions", dependencies: [
 		"NavigationTransition",
 		"RuntimeAssociation",
 		"RuntimeSwizzling",
@@ -79,5 +79,5 @@ package.targets += [
 // MARK: Product
 
 package.products += [
-	.library(name: "NavigationTransitions", targets: ["NavigationTransitions"]),
+	.library(name: "CustomNavigationTransitions", targets: ["CustomNavigationTransitions"]),
 ]
