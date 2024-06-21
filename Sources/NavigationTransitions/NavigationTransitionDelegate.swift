@@ -14,7 +14,9 @@ final class NavigationTransitionDelegate: NSObject, UINavigationControllerDelega
 	}
 
 	func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
-		baseDelegate?.navigationController?(navigationController, willShow: viewController, animated: animated)
+        navigationController.visibleViewController?.view.backgroundColor = .clear
+        baseDelegate?.navigationController?(navigationController, willShow: viewController, animated: animated)
+
 	}
 
 	func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
