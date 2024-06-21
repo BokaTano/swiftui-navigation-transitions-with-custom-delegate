@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-	name: "swiftui-navigation-transitions",
+	name: "custom_swiftui-navigation-transitions",
 	platforms: [
 		.iOS(.v13),
 		.macCatalyst(.v13),
